@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "img_date_validate"
+name = "img_validator"
 dynamic = ["version"]
 description = "A Python data science project"
 readme = "README.md"
@@ -12,10 +12,12 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
+    "python-dotenv",
+    "exif"
 ]
 
 [project.scripts]
-img_date_validate = "bin:main.main"
+img_validator = "bin:main.main"
 
 [project.optional-dependencies]
 dev = [
