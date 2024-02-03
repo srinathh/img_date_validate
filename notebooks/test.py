@@ -36,3 +36,5 @@ my_image["datetime_original"]
 # %%
 my_image["datetime_digitized"]
 # %%
+print(list(filter(lambda x: "lat" in x, my_image.list_all())))
+# %%
